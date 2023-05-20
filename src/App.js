@@ -23,29 +23,29 @@ function App() {
     }, 1500);
   }
 
-  const removeBodyClasses = () =>{
+  /* const removeBodyClasses = () =>{
     document.body.classList.remove('bg-light');
     document.body.classList.remove('bg-dark');
     document.body.classList.remove('bg-primary');
     document.body.classList.remove('bg-success');
     document.body.classList.remove('bg-warning');
     document.body.classList.remove('bg-danger');
-  }
+  } */
 
-  const toggleMode = (cls) => {
-    removeBodyClasses();
-    document.body.classList.add('bg-'+cls);
-    if (cls === 'dark') {
+  const toggleMode = () => {
+    /* removeBodyClasses(); */
+    /* document.body.classList.add('bg-'+cls); */
+    if (mode === 'light') {
       setMode('dark');
       document.body.style.backgroundColor = '#042743';
       showAlert("Dark mode has been enabled", "success");
     }
-    /* else {
+    else {
       setMode('light');
       document.body.style.backgroundColor = 'white';
       showAlert("Light mode has been enabled", "success");
-    } */
-    if (cls === 'light') {
+    }
+    /* if (cls === 'light') {
       setMode('light');
       document.body.style.backgroundColor = 'white';
       showAlert("Light mode has been enabled", "success");
@@ -69,7 +69,7 @@ function App() {
       setMode('warning');
       document.body.style.backgroundColor = 'yellow';
       showAlert("Warning mode has been enabled", "success");
-    }
+    } */
     
   }
 

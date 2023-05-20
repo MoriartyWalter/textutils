@@ -24,17 +24,17 @@ export default function Navbar(props) {
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                 <button className="btn btn-outline-primary" type="submit">Search</button>
             </form> */}
-          <button type="button" onClick={()=>{props.toggleMode('primary')}} className="btn btn-primary mx-2" style={{height: '20px', width: '20px', cursor: 'pointer', border: 'solid 2px', borderColor: 'black'}}></button>
+          {/* <button type="button" onClick={()=>{props.toggleMode('primary')}} className="btn btn-primary mx-2" style={{height: '20px', width: '20px', cursor: 'pointer', border: 'solid 2px', borderColor: 'black'}}></button>
           <button type="button" onClick={()=>{props.toggleMode('success')}} className="btn btn-success mx-2" style={{height: '20px', width: '20px', cursor: 'pointer', border: 'solid 2px', borderColor: 'black'}}></button>
           <button type="button" onClick={()=>{props.toggleMode('danger')}} className="btn btn-danger mx-2" style={{height: '20px', width: '20px', cursor: 'pointer', border: 'solid 2px', borderColor: 'black'}}></button>
           <button type="button" onClick={()=>{props.toggleMode('warning')}} className="btn btn-warning mx-2" style={{height: '20px', width: '20px', cursor: 'pointer', border: 'solid 2px', borderColor: 'black'}}></button>
           <button type="button" onClick={()=>{props.toggleMode('light')}} className="btn btn-light mx-2" style={{height: '20px', width: '20px', cursor: 'pointer', border: 'solid 2px', borderColor: 'black'}}></button>
-          <button type="button" onClick={()=>{props.toggleMode('dark')}} className="btn btn-dark mx-2" style={{height: '20px', width: '20px', cursor: 'pointer', border: 'solid 2px', borderColor: 'black'}}></button>
+          <button type="button" onClick={()=>{props.toggleMode('dark')}} className="btn btn-dark mx-2" style={{height: '20px', width: '20px', cursor: 'pointer', border: 'solid 2px', borderColor: 'black'}}></button> */}
 
-          {/* <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
+          <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
             <input className="form-check-input" onClick={()=>{props.toggleMode(null)}} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
             <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Toggle Mode</label>
-          </div> */}
+          </div>
         </div>
       </div>
     </nav>
